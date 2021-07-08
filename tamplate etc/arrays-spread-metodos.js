@@ -30,5 +30,14 @@ console.log(numerosPares)
 const numerosOrdenadosCrescente = numeros.sort((a, b) => a + b)
 console.log(numerosOrdenadosCrescente)
 
-const numerosOrdenadosDecrescente = numero.sort((a, b) => b - a)
+const numerosOrdenadosDecrescente = numeros.sort((a, b) => b - a)
 console.log(numerosOrdenadosDecrescente)
+
+//reduce - reduz nosso array a um resultado de uma operação matemática
+const numbers = [1, 22, 53]
+
+const soma = numbers.reduce((valorAnterior, valorAtual) => {
+  return valorAnterior + valorAtual
+}, 0)
+
+console.log(soma)
